@@ -1,14 +1,15 @@
 # Virtual env
-practice_env/
+venv/
+env/
 __pycache__/
 *.pyc
 
 # Data (too big for git)
-data/
-# data/processed/*
-# data/submissions/*
-# !data/raw/.gitkeep
-# !data/processed/.gitkeep
+data/raw/*
+data/processed/*
+data/submissions/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
 # Models (often large)
 models/*.pkl
@@ -19,6 +20,8 @@ models/*.joblib
 
 # Environment variables
 .env
+practice_env/
+
 # IDE
 .vscode/
 .idea/
