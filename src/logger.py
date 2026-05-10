@@ -4,6 +4,7 @@ from datetime import datetime
 from src import config
 
 def setup_logger(name: str= "f1_pitstops") -> logging.Logger:
+    
     """Setup a logger that writes to file and console"""
 
     #make sure log directory exists
