@@ -19,4 +19,7 @@ TRAIN_FILE = RAW_DATA_DIR / "train.csv"
 TEST_FILE = RAW_DATA_DIR / "test.csv"
 SUBMISSION_FILE = RAW_DATA_DIR / "sample_submission.csv"
 
+#Submission Column names
+ID_COL= "id"
+TARGET_COL= "target"
 # MODEL SETTING
