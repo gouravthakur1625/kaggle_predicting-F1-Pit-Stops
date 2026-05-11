@@ -102,10 +102,10 @@ def Save_submission(predictions, ids, filename: str) -> Path:
         raise ValueError("Predictions and ID's must have same length")
     
     config.SUBMISSION_DIR.mkdir(parents=True, exist_ok=True)
-    submission= pd.DataFrame{
+    submission= pd.DataFrame({
         config.ID_COL: ids,
         config.TARGET_COL: predictions
-    }
+    })
     path= config.SUBMISSION_DIR / filename
     submission.to_csv(path, index= False)
     logger.info(f"Submission saved → {path}")
