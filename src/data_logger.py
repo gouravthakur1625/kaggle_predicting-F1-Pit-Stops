@@ -110,6 +110,5 @@ def Save_submission(predictions, ids, filename: str) -> Path:
     submission.to_csv(path, index= False)
     logger.info(f"Submission saved → {path}")
     logger.info(f"Submission shape: {submission.shape}")
-    logger.info(f"Predictions stats — min: {predictions.min():.4f}, "
-                f"max: {predictions.max():.4f}, mean: {predictions.mean():.4f}")
+    logger.info(f"Predictions stats — min: {predictions.min():.4f}, max: {predictions.max():.4f}, mean: {predictions.mean():.4f}")
     return path
