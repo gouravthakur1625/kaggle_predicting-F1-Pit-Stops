@@ -21,5 +21,5 @@ SUBMISSION_FILE = RAW_DATA_DIR / "sample_submission.csv"
 
 #Submission Column names
 ID_COL= "id"
-TARGET_COL= "target"
+TARGET_COL= "PitNextLap"
 # MODEL SETTING
