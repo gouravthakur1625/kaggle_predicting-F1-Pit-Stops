@@ -22,4 +22,10 @@ SUBMISSION_FILE = RAW_DATA_DIR / "sample_submission.csv"
 #Submission Column names
 ID_COL= "id"
 TARGET_COL= "PitNextLap"
-# MODEL SETTING
+
+#Competition Settings
+COMPETITION_NAME= "Predicting F1 Pit Stops"
+
+# Binary classification settings
+METRIC= "roc_auc"
+PROBLEM_TYPE= "classification"
